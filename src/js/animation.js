@@ -136,6 +136,7 @@ export const animate = function () {
         setTimeout(() => {
           frames[0].classList.add("appear");
           frames[0].style.opacity = "1";
+          flash.style.display = "none";
         }, 1500);
         return;
       }

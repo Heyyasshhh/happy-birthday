@@ -1,0 +1,5 @@
+{
+  "buildCommand": "npm run build:parcel && node -e \"require('fs').cpSync('wish','dist/wish',{recursive:true})\"",
+  "outputDirectory": "dist",
+  "framework": null
+}

@@ -3,6 +3,7 @@
 .balloon {
   grid-row: 1 / -1;
   width: 130%;
+  pointer-events: none;
 
   &--left {
     grid-column: balloon-l-start / balloon-l-end;
@@ -37,6 +38,7 @@
 .flag {
   grid-row: 1/2;
   z-index: 0;
+  pointer-events: none;
 
   &--c-left {
     grid-column: flag-cl-start / flag-cl-end;
@@ -71,18 +73,18 @@
 .img-back {
   position: relative;
   background-color: #ffa8dc;
-  height: 20rem;
-  width: 20rem;
+  height: 28rem;
+  width: 28rem;
   border-radius: 50%;
 
   @media (max-width: 800px) {
-    height: 35rem;
-    width: 35rem;
+    height: 32rem;
+    width: 32rem;
   }
 
   @media (max-width: 500px) {
-    height: 20rem;
-    width: 20rem;
+    height: 24rem;
+    width: 24rem;
   }
 }
 
@@ -97,16 +99,18 @@
   border-style: dotted;
   border-radius: 50%;
 
+  background-color: #ffa8dc;
   background-image: url(../pic.jpeg);
-  background-position: top;
+  background-position: center 62%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 82%;
 }
 
 .cap {
   @include position(-15%, 50%, 0, 0);
 
   height: 33.33333333%;
+  pointer-events: none;
 }
 
 .confetti {
@@ -114,6 +118,7 @@
 
   height: 150%;
   width: 150%;
+  pointer-events: none;
 }
 
 .cake {
@@ -121,9 +126,12 @@
 
   height: 70%;
   width: 70%;
+  pointer-events: none;
 }
 
 .HBD-text {
+  position: relative;
+  z-index: 2;
   width: 90%;
 }
 
@@ -149,6 +157,25 @@
   }
   @media (max-width: 500px) {
     font-size: 3.8rem;
+  }
+}
+
+.wish-link {
+  position: relative;
+  z-index: 3;
+  display: inline-block;
+  margin-top: 1.6rem;
+  padding: 0.7rem 1.8rem;
+  border-radius: 999px;
+  background: #fff;
+  color: #c2185b;
+  font-size: 1.6rem;
+  text-decoration: none;
+  cursor: pointer;
+  pointer-events: auto;
+
+  @media (max-width: 800px) {
+    font-size: 2.2rem;
   }
 }
 
@@ -235,6 +262,7 @@
 
 .flash {
   background-color: #fff;
+  pointer-events: none;
 }
 
 .giftroom,
